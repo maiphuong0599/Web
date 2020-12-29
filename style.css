@@ -1,6 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #7d7d7d;
+}
+@font-face {
+    font-family: 'Museo';
+    src:url(fonts/Museo700.ttf) format('truetype');
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Museo',serif;
+    color: #333333;
+}
+a {
+    color: #fb3f3a;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #e6120a;
+    border-bottom: 1px solid #ddd;
+}
 .hero-unit {
     color: #fff;
     background: #222 url(img/cover.png) no-repeat 50% top;
+    border-bottom: 0;
 }
 .navbar-inner{
     padding-top: 10;
@@ -25,25 +49,179 @@
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.hero-unit-inner a {
-    color:#fff;
-}
 h1 {
     font-size: 48px;
 }
 h4 {
     font-size: 18px;
 }
+h5 {
+    padding: 10px;
+    font-size: 14px;
+}
 .cover-img {
     padding-top: 30px;
 }
 .hero-unit-inner {
-    padding: 30px;
     font-weight: bold;
+}
+.hero-unit-inner h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 3);
+}
+.hero-unit-inner h4 {
+    margin-bottom: 30px;
+    color: #cccccc;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 3);
+}
+.hero-unit-inner a {
+    margin-bottom: 40px;
+    padding-left: 10px;
+    color: #fff;
+}
+.hero-unit-inner img {
+    margin-bottom: 40px;
 }
 .btn {
     display:inline-block;
     font-weight: bold;
     text-decoration: none;
     border-radius: 3px;
+    font-size: 12px;
+    text-shadow: none;
+    box-shadow: inset 1px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 2);
+    margin-top: 20px;
+}
+.hero-unit-inner .btn-danger {
+    margin-top: 0;
+}
+#process {
+    background: #eeeeee;
+    border-bottom: #dddddd;
+    border-top: 1px solid #fff;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+    padding: 60px 0;
+}
+.h-line {
+    max-height: 5px;
+    background: url(img/h-line.png) repeat-x;
+    border-radius: 3px;
+    position: relative;
+    top: 55px;
+    z-index: -1;
+}
+.process-icon {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: transparent url(img/icon.png) no-repeat;
+    background-position: left top;
+}
+.process-icon.idesign {
+    background-position: -100px top;
+}
+.process-icon.idevelop {
+    background-position: -200px top;
+}
+.process-icon.ilaunch {
+    background-position: -300px top;
+}
+.heading {
+    margin-bottom: 20px;
+}
+#portfolio {
+    padding: 60px 0;
+}
+.title {
+    margin-bottom: 0;
+}
+.category {
+    font-size: 12px;
+    color: #999999;
+}
+#partners {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+#widgets {
+    padding: 50px 0 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+.testimonials blockquote {
+    overflow: hidden;
+    border: none;
+}
+.testimonials blockquote p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+}
+.testimonials blockquote cite {
+    color: #333;
+}
+.blog-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-lists li, .tweet-lists li {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.blog-lists li:first-child, .tweet-lists li:first-child {
+    padding-top: 0;
+}
+.blog-lists li:last-child, .tweet-lists li:last-child {
+    border-bottom: 0;
+}
+.blog-lists .tweet-lists h5 {
+    padding: 0;
+    margin: 0;
+}
+.blog-lists .tweet-lists h5 a {
+    color: #333;
+}
+.blog-lists .tweet-lists h5 a:hover {
+    color: #666;
+}
+.tweet-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tweet-lists li img {
+    margin-right: 20px;
+}
+.footer {
+    padding: 60px 0;
+}
+#social {
+    clear: both;
+}
+.twitter {
+    background: #1a6aa3;
+    margin-right: 5px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.twitter:hover, .twitter:focus {
+    background: #4f91bf;
+}
+.facebook {
+    background: #2727a9;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.facebook:hover, .facebook:focus {
+    background: #20699c;
 }
